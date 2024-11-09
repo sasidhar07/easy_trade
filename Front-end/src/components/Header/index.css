@@ -1,0 +1,115 @@
+.header {
+    background-color: #16a34a;
+    color: white;
+    padding: 1rem 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .desktop-icons {
+    display: none;
+  }
+  .mobile-menu-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .mobile-nav {
+    margin-top: 1rem;
+  }
+  .mobile-nav a, .mobile-nav button {
+    display: block;
+    padding: 0.5rem 0;
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+  }
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .popup {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #333;
+  }
+  .popup h2 {
+    margin-top: 0;
+  }
+  .popup-buttons {
+    margin-top: 1rem;
+  }
+  .popup-buttons button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .confirm-button {
+    background-color: #16a34a;
+    color: white;
+  }
+  .cancel-button {
+    background-color: #e5e5e5;
+    color: #333;
+  }
+  @media (min-width: 768px) {
+    .desktop-nav {
+      display: flex;
+      gap: 1.5rem;
+      margin-left: 100%;
+    }
+    .desktop-nav a {
+      color: white;
+      text-decoration: none;
+      
+    }
+    .desktop-icons {
+      display: flex;
+      gap: 1rem;
+      margin-left: 20px;
+    }
+    .icon-link {
+      color: white;
+      text-decoration: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .mobile-menu-button {
+      display: none;
+    }
+    .mobile-nav {
+      display: none;
+    }
+  }
